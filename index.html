@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--Provide the required head attributes -->
+    <head>
+        <meta charset="UTF-8">
+        <title>ESPLAR Viewer Experience Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!--Main Body-->
+    <h1 id="title">ESPLAR Viewer Experience Survey</h1>
+    <h2 id="subtitle">Summer 2023 Edition</h2>
+
+    <p id="description">Please take 5 minutes to complete 
+        the following information about your ESPLAR viewing 
+        experience.</p>
+    
+    <!--Input Elements-->
+    <form method="post" id="survey-form">
+        
+        <label id='name-label' for="name">Enter your Name: <input id="name" name="name" type="text" required placeholder="Kailu"></label>
+        <label for="username">Enter your preferred username: <input id="username" name="username" type="text" required placeholder="SVM_Naeli"></label>
+            <label id='email-label' for="email">Enter your email: <input id="email" name="email" type="email" required placeholder="SVM_Naeli@gmail.com"></label>
+            <label id='number-label' for="number">Age: (optional)<input id='number' name='number' type='number' placeholder="19" min="17" max="100"></label>
+    <!--First Choice Prefered Team-->      
+        <label for="dropdown">What is your first choice preferred team?
+            <select id="dropdown" name="dropdown">
+                <option value="0">(select 1)</option>
+                <option value="1">Saihara Motorsports</option>
+                <option value="2">Greater Kanto Motorsports</option>
+                <option value="3">Hennivan Racing</option>
+                <option value="4">Team Nitra</option>
+                <option value="5">Team Maxima</option>
+                <option value="6">Mylo-Kerrivan Motorsports</option>
+                <option value="7">Caspian Racing</option>
+                <option value="8">Mitteldeutschland Racing</option>
+                <option value="9">Baltica GP</option>
+                <option value="10">Kiruvenik Racing</option>
+                <option value="11">Scandinavian Motorsports</option>
+                <option value="12">Podkarpackie Racing</option>
+                <option value="13">Honda Racing Team</option>
+                <option value="14">GP Luknow</option>
+                <option value="15">Union Motorsport</option>
+                <option value="16">Dragon Motorsports</option>
+                <option value="17">Team Saturn</option>
+                <option value="18">Holden</option>
+                <option value="19">Pacific Racing</option>
+                <option value="20">Danubian Racing</option>
+            </select>
+        </label>
+        <p></p>
+        <label for="viewership">Which of these have you watched ESPLAR races from? (choose 1 or more)
+            <label for="option-radio"><input id="option-radio" type="checkbox" value="radio">Radio</label>
+            <label for="option-tv"><input id="option-tv" type="checkbox" value="tv">TV</label>
+            <label for="option-streaming"><input id="option-streaming" type="checkbox" value="streaming">Streaming</label>
+        </label>
+        <p></p>
+    <!--Rate the coverage of Radio, Television, or Streaming-->
+        <label for="coverage-rating">Please rate the coverage of Radio, Television, or Streaming throughout the 2023 season so far.
+        <p>Radio</p>
+        <label for="rating-excellent"><input id="rating-excellent" type="radio" name="radio-rating" value='4'>Excellent</label>
+        <label for="rating-good"><input id="rating-good" type="radio" value='3' name="radio-rating">Good</label>
+        <label for="rating-meh"><input id="rating-meh" type="radio" name="radio-rating" value='2' >Meh</label>
+        <label for="rating-bad"><input id="rating-bad" type="radio" name="radio-rating" value='1'>Bad</label>
+        <p>Television</p>
+        <label for="rating-excellent"><input id="rating-excellent" type="radio" name="tv-rating" value='4'>Excellent</label>
+        <label for="rating-good"><input id="rating-good" type="radio" value='3' name="tv-rating" value='4'>Good</label>
+        <label for="rating-meh"><input id="rating-meh" type="radio" name="tv-rating" value='2'>Meh</label>
+        <label for="rating-bad"><input id="rating-bad" type="radio" name="tv-rating" value='1'>Bad</label>
+
+        <p>Streaming</p>
+        <label for="rating-excellent"><input id="rating-excellent" type="radio" name="stream-rating" value='4'>Excellent</label>
+        <label for="rating-good"><input id="rating-good" type="radio" value='3'  name="stream-rating">Good</label>
+        <label for="rating-meh"><input id="rating-meh" type="radio" name="stream-rating" value='2'>Meh</label>
+        <label for="rating-bad"><input id="rating-bad" type="radio" name="stream-rating" value='1'>Bad</label>
+        </label>
+    <!--Comments for improvements to coverage-->
+        <label for="comments-coverage"> Please comment about improvements to coverage this season.
+        <textarea id="comments-coverage" name="comments-coverage" rows="8" cols="40" placeholder="While the streaming coverage was good so far, I would like to suggest that..."></textarea>
+        </label>
+    <!--Terms and Conditions-->
+    <p>Before submitting, please be mindful of the following terms and conditions:</p>
+    <p>
+        <ul>
+            <li>Your name, username and email shall not be shared.</li>
+            <li>Only ratings and comments shall be shared. First Choice teams may be shared for informational purposes.</li>
+        </ul>
+    </p>
+    <label for="terms-and-conditions">
+        <input id='terms-and-conditions' type="checkbox" required name="terms-and-conditions" value="100">Accept
+    </label>
+    <!--Submit-->
+    <input id="submit" type="submit" value="Submit">
+</form>
+
+</html>
